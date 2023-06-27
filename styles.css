@@ -1,26 +1,27 @@
 /* Basic styling */
 
 body {
+    /* background-image: url('Imagenes/City\ View\ pasillo\ izquierda.JPG'); */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
   }
   
   h1, h2, h3 {
-    color: #333;
+    color: #000000;
   }
   
   /* Header and navigation */
   
   header {
-    background-color: #f1f1f1;
+    background-color: #FFFFFF ;
     padding: 20px;
     text-align: center;
   }
   
   nav {
-    background-color: #333;
-    color: #fff;
+    background-color: #000000;
+    color: #FFFFFF ;
     padding: 10px;
   }
   
@@ -37,19 +38,19 @@ body {
   }
   
   nav ul li a {
-    color: #fff;
+    color: #FFFFFF ;
     text-decoration: none;
   }
   
   /* Banner section */
   
   #banner {
-    background-image: url('banner.jpg');
+    background-image: url('https://onedrive.live.com/embed?resid=96F7D4AC815D93C5%2152016&authkey=%21AGOjCPj4UURa8VU&width=1440&height=433');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px;
-    color: #fff;
+    color: #000000;
   }
   
   #banner h2 {
@@ -63,8 +64,8 @@ body {
   
   .btn {
     display: inline-block;
-    background-color: #333;
-    color: #fff;
+    background-color: #000000;
+    color: #FFFFFF ;
     padding: 10px 20px;
     text-decoration: none;
   }
@@ -72,17 +73,26 @@ body {
   /* Featured products section */
   
   #featured-products {
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
+    text-align: center;
   }
   
-  .product {
+  .product:nth-child(even) {
+    background-color: #B0E0E6;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .product:nth-child(odd) {
+    background-color: #F5F5DC;
     text-align: center;
     margin-bottom: 30px;
   }
   
   .product img {
-    width: 300px;
-    height: 200px;
+    width: 600px;
+    height: 400px;
     object-fit: cover;
     margin-bottom: 10px;
   }
@@ -91,8 +101,37 @@ body {
   
   footer {
     background-color: #333;
-    color: #fff;
+    color: #FFFFFF ;
     text-align: center;
     padding: 10px;
   }
   
+  /* About page styles */
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #000000;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /*product page styles*/
+  #product-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+    
