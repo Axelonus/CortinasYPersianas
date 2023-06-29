@@ -95,6 +95,7 @@ body {
     height: 400px;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius:14%;
   }
   
   /* Footer */
