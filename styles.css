@@ -1,11 +1,66 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /* Basic styling */
-
 body {
-    /* background-image: url('Imagenes/City\ View\ pasillo\ izquierda.JPG'); */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .hasBG{
+    background-image: url("https://onedrive.live.com/embed?resid=96F7D4AC815D93C5%2152123&authkey=%21AAPf2r-nfLhqst0&width=660&height=999999");
+    background-color: rgba(200, 200, 200, 0.4);
+    background-size: cover;
+    background-position: center;
   }
+
+  .ProductBody {
+    background-image: url("https://onedrive.live.com/embed?resid=96F7D4AC815D93C5%2152127&authkey=%21ANblUqXD2u87i9A&width=999999&height=660");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hasBG{
+    background-image: url("https://onedrive.live.com/embed?resid=96F7D4AC815D93C5%2152123&authkey=%21AAPf2r-nfLhqst0&width=1024&height=999999");
+    background-color: rgba(200, 200, 200, 0.4);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ProductBody {
+    background-image: url("https://onedrive.live.com/embed?resid=96F7D4AC815D93C5%2152127&authkey=%21ANblUqXD2u87i9A&width=999999&height=1024");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+@media (min-width: 1201px) {
+  .hasBG{
+    background-image: url("https://onedrive.live.com/embed?resid=96F7D4AC815D93C5%2152123&authkey=%21AAPf2r-nfLhqst0&width=1920&height=1278");
+    background-color: rgba(200, 200, 200, 0.4);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ProductBody {
+    background-image: url("https://onedrive.live.com/embed?resid=96F7D4AC815D93C5%2152127&authkey=%21ANblUqXD2u87i9A&width=1900&height=1900");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
   
   h1, h2, h3 {
     color: #000000;
@@ -15,7 +70,7 @@ body {
   
   header {
     background-color: #FFFFFF ;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
   }
   
@@ -34,7 +89,7 @@ body {
   }
   
   nav ul li {
-    margin-right: 10px;
+    margin-right: 20px;
   }
   
   nav ul li a {
@@ -52,14 +107,26 @@ body {
     padding: 100px;
     color: #000000;
   }
-  
-  #banner h2 {
-    font-size: 36px;
+
+  @media (max-width: 1200px) {
+    #banner h2 {
+      font-size: 24px;
+    }
+    
+    #banner p {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
   }
-  
-  #banner p {
-    font-size: 18px;
-    margin-bottom: 30px;
+  @media (min-width: 1201px) {
+    #banner h2 {
+      font-size: 36px;
+    }
+    
+    #banner p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
   }
   
   .btn {
@@ -81,19 +148,33 @@ body {
   
   .product:nth-child(even) {
     background-color: #B0E0E6;
+    border-radius: 4%;
     text-align: center;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #333;
+    margin: 0;
     margin-bottom: 30px;
   }
   .product:nth-child(odd) {
     background-color: #F5F5DC;
+    border-radius: 4%;
     text-align: center;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #333;
+    margin: 0;
     margin-bottom: 30px;
   }
   
   .product img {
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
+    /* max-width: 600px;
+    max-height: 400px;
+    object-fit: cover; */
+    width: 100%;
+    max-width: 600px;
+    min-width: 310px;
+    max-height:600px;
     margin-bottom: 10px;
     border-radius:14%;
   }
@@ -104,6 +185,7 @@ body {
     background-color: #333;
     color: #FFFFFF ;
     text-align: center;
+    margin-top: auto;
     padding: 10px;
   }
   
@@ -135,4 +217,6 @@ body {
     padding: 20px;
     text-align: center;
   }
-    
+  .telefonos ul{
+    font-size: 22px;
+  }
